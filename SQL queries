@@ -5,11 +5,11 @@ Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, 
 
 */
 
-
 Select *
 From CovidProject..CovidDeaths
 Where continent is not null 
 order by 3,4
+
 
 -- Select Data that we are going to be starting with
 
@@ -104,6 +104,7 @@ Select *, (RollingPeopleVaccinated/Population)*100
 From PopvsVac
 
 
+
 -- Using Temp Table to perform Calculation on Partition By in previous query
 
 DROP Table if exists #PercentPopulationVaccinated
@@ -151,6 +152,8 @@ where dea.continent is not null
 Queries used for Tableau Project
 
 */
+
+
 
 -- 1. 
 
